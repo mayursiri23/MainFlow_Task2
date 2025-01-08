@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Dropdown Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        header nav ul li:hover > a {
+            background-color: #555;
+        }
+        header nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 10px 0;
+            display: none;
+            min-width: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header nav ul li:hover > ul {
+            display: block;
+        }
+        header nav ul li ul li {
+            margin: 0;
+        }
+        header nav ul li ul li a {
+            padding: 10px 15px;
+        }
+        header nav ul li ul li a:hover {
+            background-color: #555;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #f4f4f4;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features {
+            padding: 50px 20px;
+            background: #fff;
+        }
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .features ul li {
+            width: 30%;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .features ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .features ul li {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Website Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO Services</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Your gateway to excellence in service and quality.</p>
+        <a href="#">Get Started</a>
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <ul>
+            <li>
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1.</p>
+            </li>
+            <li>
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2.</p>
+            </li>
+            <li>
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Main Flow Services and Technologies. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
